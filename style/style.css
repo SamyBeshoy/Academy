@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  animation: animation_for_body 0.75s;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@keyframes animation_for_body {
+  from {
+    opacity: 0;
+    transform: translatey(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+section {
+  padding: 30px 0;
+}
+
+.boxText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boxImg img {
+  width: 350px;
+  filter: brightness(75%);
+  border: 5px solid #186ee0;
+  padding: 10px;
+}
+
+.littletit {
+  color: rgba(85, 85, 85, 0.719);
+}
+.littletit span {
+  color: #186ee0;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.title span {
+  color: #186ee0;
+}
+
+.paragraph {
+  color: rgba(85, 85, 85, 0.719);
+}
+
+.background {
+  background-color: #f8f8f8;
+}
+
+.custombtn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #186ee0;
+  padding: 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: 1px solid #186ee0;
+}
+.custombtn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 654;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+header .container .logo a {
+  text-decoration: none;
+  color: #186ee0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+header .container .logo a img {
+  height: 3.125em;
+}
+header .container nav {
+  display: flex;
+  font-size: 1.25em;
+}
+header .container nav .active {
+  color: #186ee0;
+}
+header .container nav .page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+header .container nav .page div {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 46px;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  z-index: 245555555555448;
+}
+header .container nav .page div span {
+  width: 180px;
+  font-size: calc(1em - 2px);
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  padding: 10px;
+}
+header .container nav .page div span a {
+  color: rgb(0, 0, 0);
+}
+header .container nav .page div span:hover {
+  background-color: #e9ecef;
+}
+header .container nav span a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+header .container nav span a:hover {
+  color: #186ee0;
+}
+header .container .sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: 444156;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .container .sidenav .parent {
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .sidenav .parent .ch1 {
+  display: flex;
+  align-items: center;
+}
+header .container .sidenav .parent .ch1 img {
+  height: 3.125em;
+  margin-right: 10px;
+}
+header .container .sidenav .parent .ch2 .closebtn {
+  font-size: 2.1875em;
+  color: black;
+}
+header .container .sidenav div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header .container .sidenav div:nth-child(2) a {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+header .container .sidenav div:nth-child(2) a:hover {
+  color: #186ee0;
+}
+header .container .sidenav div:nth-child(2) a:nth-child(1) {
+  color: #186ee0;
+}
+header .container .boxThree .tog {
+  font-size: 1.5625em;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  header .container nav {
+    display: none;
+  }
+}
+@media (min-width: 1001px) {
+  header .container .boxThree {
+    display: none;
+  }
+}
+.landing {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/landing.jpg);
+  background-color: #186ee0;
+  height: calc(100vh - 70px);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+.landing .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.landing .container .text {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 2.5em;
+  font-family: "exo 2";
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.vision .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.programs .container .boxheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.programs .container .boxs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.programs .container .boxs .box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.programs .container .boxs .box img {
+  width: 300px;
+}
+
+.team .container .boxheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.team .container .boxs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.team .container .boxs .box {
+  padding: 20px;
+  border-radius: 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.team .container .boxs .box img {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */
