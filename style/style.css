@@ -115,7 +115,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 header .container .logo a {
   text-decoration: none;
@@ -125,7 +125,7 @@ header .container .logo a {
   font-weight: bold;
 }
 header .container .logo a img {
-  height: 3.125em;
+  height: 65px;
 }
 header .container nav {
   display: flex;
@@ -202,7 +202,7 @@ header .container .sidenav .parent .ch1 {
   align-items: center;
 }
 header .container .sidenav .parent .ch1 img {
-  height: 3.125em;
+  height: 65px;
   margin-right: 10px;
 }
 header .container .sidenav .parent .ch2 .closebtn {
@@ -246,7 +246,7 @@ header .container .boxThree .tog {
 .landing {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imgs/landing.jpg);
   background-color: #186ee0;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 80px);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -266,7 +266,52 @@ header .container .boxThree .tog {
   font-weight: bold;
   line-height: 1.5;
   font-size: 2.5em;
+}
+
+.landing_sec {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.landing_sec .container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.landing_sec .container div:nth-child(1) {
   font-family: "exo 2";
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+.landing_sec .container div:nth-child(2) {
+  font-size: 1em;
+  margin: 10px 0;
+}
+.landing_sec .container div:nth-child(2) a {
+  color: inherit;
+  text-decoration: none;
+}
+.landing_sec .container div:nth-child(2) a:nth-child(2) {
+  color: #186ee0;
+}
+
+.landing_about {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing_programs {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_programs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .about .container {
@@ -275,6 +320,15 @@ header .container .boxThree .tog {
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .about .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
 .mission .container {
   display: flex;
   justify-content: space-between;
@@ -288,6 +342,22 @@ header .container .boxThree .tog {
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .mission .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .vision .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
 .programs .container .boxheader {
   display: flex;
   justify-content: space-between;
@@ -312,6 +382,14 @@ header .container .boxThree .tog {
   width: 300px;
 }
 
+@media (max-width: 767px) {
+  .programs .container .boxheader {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
 .team .container .boxheader {
   display: flex;
   justify-content: space-between;
@@ -320,18 +398,139 @@ header .container .boxThree .tog {
 }
 .team .container .boxs {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .team .container .boxs .box {
   padding: 20px;
   border-radius: 20px;
-  width: 340px;
+  width: 240px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: center;
 }
 .team .container .boxs .box img {
-  width: 300px;
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .team .container .boxheader {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
+.footer_one {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/footer.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  padding: 30px 0;
+  font-size: 1em;
+}
+.footer_one .container .boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.footer_one .container .boxs .box_one .tit_f {
+  color: white;
+  font-family: "exo 2";
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer_one .container .boxs .box_one div:nth-child(2),
+.footer_one .container .boxs .box_one div:nth-child(3),
+.footer_one .container .boxs .box_one div:nth-child(4) {
+  color: rgb(255, 255, 255);
+}
+.footer_one .container .boxs .box_one div:nth-child(2) i,
+.footer_one .container .boxs .box_one div:nth-child(3) i,
+.footer_one .container .boxs .box_one div:nth-child(4) i {
+  margin: 10px 0;
+}
+.footer_one .container .boxs .box_one div:nth-child(5) {
+  margin-top: 15px;
+}
+.footer_one .container .boxs .box_one div:nth-child(5) i {
+  margin: 0 10px 0 0;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+.footer_one .container .boxs .box_two .tit_f {
+  color: white;
+  font-family: "exo 2";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer_one .container .boxs .box_two div a {
+  text-decoration: none;
+  color: white;
+}
+.footer_one .container .boxs .box_three .tit_f {
+  color: white;
+  font-family: "exo 2";
+  font-weight: bold;
+}
+.footer_one .container .boxs .box_three div:nth-child(2) {
+  color: rgb(255, 255, 255);
+  margin: 15px 0;
+}
+.footer_one .container .boxs .box_three div:nth-child(3) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer_one .container .boxs .box_three div:nth-child(3) input:nth-child(1) {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.562);
+  padding: 15px;
+  border-radius: 10px;
+}
+.footer_one .container .boxs .box_three div:nth-child(3) input:nth-child(1)::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.footer_one .container .boxs .box_three div:nth-child(3) input:nth-child(1)::placeholder {
+  color: rgb(255, 255, 255);
+}
+.footer_one .container .boxs .box_three div:nth-child(3) input:nth-child(2) {
+  position: absolute;
+  margin-right: 10px;
+  background-color: #186ee0;
+  border: unset;
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer_one .container footer {
+  border-top: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .footer_one .container .boxs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_one .container .boxs .box_one div:nth-child(5) i {
+    margin: 0 5px;
+  }
+  .footer_one .container .boxs .box_two {
+    margin: 50px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
