@@ -296,7 +296,7 @@ header .container .boxThree .tog {
   color: inherit;
   text-decoration: none;
 }
-.landing_sec .container div:nth-child(2) a:nth-child(2) {
+.landing_sec .container div:nth-child(2) a:last-child {
   color: #186ee0;
 }
 
@@ -309,6 +309,20 @@ header .container .boxThree .tog {
 
 .landing_programs {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_programs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing_team {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_team.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing_sustainabilitychampions {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_sustainabilitychampions.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -423,6 +437,25 @@ header .container .boxThree .tog {
     gap: 30px;
   }
 }
+.partners .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.partners .container .imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.partners .container .imgs img {
+  width: 200px;
+  border-radius: 20px;
+}
+
 .footer_one {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/footer.jpg);
   width: 100%;
