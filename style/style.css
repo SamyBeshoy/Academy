@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: #f8f8f8;
   animation: animation_for_body 0.75s;
 }
 
@@ -82,10 +83,6 @@ section {
 
 .paragraph {
   color: rgba(85, 85, 85, 0.719);
-}
-
-.background {
-  background-color: #f8f8f8;
 }
 
 .custombtn {
@@ -314,15 +311,22 @@ header .container .boxThree .tog {
   background-size: cover;
 }
 
-.landing_team {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_team.jpg);
+.landing_sustainabilitychampions {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_sustainabilitychampions.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.landing_sustainabilitychampions {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_sustainabilitychampions.jpg);
+.landing_events {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_events.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing_team {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_team.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -391,6 +395,10 @@ header .container .boxThree .tog {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: 0.5s;
+}
+.programs .container .boxs .box:hover {
+  transform: translateY(-10px);
 }
 .programs .container .boxs .box img {
   width: 300px;
@@ -404,6 +412,63 @@ header .container .boxThree .tog {
     gap: 30px;
   }
 }
+.sustainability_champions .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.sustainability_champions .container .eligibility,
+.sustainability_champions .container .benefits,
+.sustainability_champions .container .modules,
+.sustainability_champions .container .dates,
+.sustainability_champions .container .complete,
+.sustainability_champions .container .more,
+.sustainability_champions .container .apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sustainability_champions .container .eligibility .title,
+.sustainability_champions .container .benefits .title,
+.sustainability_champions .container .modules .title,
+.sustainability_champions .container .dates .title,
+.sustainability_champions .container .complete .title,
+.sustainability_champions .container .more .title,
+.sustainability_champions .container .apply .title {
+  color: #186ee0;
+}
+
+.events .container .boxheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.events .container .boxs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.events .container .boxs .box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.5s;
+}
+.events .container .boxs .box:hover {
+  transform: translateY(-10px);
+}
+.events .container .boxs .box img {
+  width: 300px;
+}
+
 .team .container .boxheader {
   display: flex;
   justify-content: space-between;
@@ -417,6 +482,7 @@ header .container .boxThree .tog {
   gap: 20px;
 }
 .team .container .boxs .box {
+  background-color: white;
   padding: 20px;
   border-radius: 20px;
   width: 240px;
@@ -424,6 +490,10 @@ header .container .boxThree .tog {
   flex-direction: column;
   gap: 10px;
   text-align: center;
+  transition: 0.5s;
+}
+.team .container .boxs .box:hover {
+  transform: translateY(-10px);
 }
 .team .container .boxs .box img {
   width: 200px;
@@ -454,6 +524,10 @@ header .container .boxThree .tog {
 .partners .container .imgs img {
   width: 200px;
   border-radius: 20px;
+  transition: 0.5s;
+}
+.partners .container .imgs img:hover {
+  transform: translateY(-10px);
 }
 
 .footer_one {
