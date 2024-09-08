@@ -101,6 +101,33 @@ section {
   color: black;
 }
 
+.open {
+  background-color: green;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.close {
+  background-color: red;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.coming {
+  background-color: gray;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
 header {
   position: sticky;
   left: 0;
