@@ -345,6 +345,13 @@ header .container .boxThree .tog {
   background-size: cover;
 }
 
+.landing_aiunlocked {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_aiunlocked.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .landing_events {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/landing_events.jpg);
   background-repeat: no-repeat;
@@ -440,32 +447,32 @@ header .container .boxThree .tog {
     gap: 30px;
   }
 }
-.sustainability_champions .container {
+.programs_content .container {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 20px;
 }
-.sustainability_champions .container .eligibility,
-.sustainability_champions .container .benefits,
-.sustainability_champions .container .modules,
-.sustainability_champions .container .dates,
-.sustainability_champions .container .complete,
-.sustainability_champions .container .more,
-.sustainability_champions .container .apply {
+.programs_content .container .eligibility,
+.programs_content .container .benefits,
+.programs_content .container .modules,
+.programs_content .container .dates,
+.programs_content .container .complete,
+.programs_content .container .more,
+.programs_content .container .apply {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.sustainability_champions .container .eligibility .title,
-.sustainability_champions .container .benefits .title,
-.sustainability_champions .container .modules .title,
-.sustainability_champions .container .dates .title,
-.sustainability_champions .container .complete .title,
-.sustainability_champions .container .more .title,
-.sustainability_champions .container .apply .title {
+.programs_content .container .eligibility .title,
+.programs_content .container .benefits .title,
+.programs_content .container .modules .title,
+.programs_content .container .dates .title,
+.programs_content .container .complete .title,
+.programs_content .container .more .title,
+.programs_content .container .apply .title {
   color: #186ee0;
 }
 
@@ -599,6 +606,7 @@ header .container .boxThree .tog {
   border-radius: 50%;
   cursor: pointer;
   background-color: white;
+  color: black;
 }
 .footer_one .container .boxs .box_two .tit_f {
   color: white;
